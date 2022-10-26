@@ -1,0 +1,22 @@
+{
+  "name": "user-farm-devices-mapper",
+  "version": "0.1.0",
+  "description": "lambda function to create user-farm-devices mapping in dynamodb table",
+  "main": "handler.js",
+  "scripts": {
+    "deploy": "serverless deploy",
+    "local": "serverless invoke local --function getRecords"
+  },
+  "author": "Swapna",
+  "license": "ISC",
+  "dependencies": {
+    "@turf/boolean-point-in-polygon": "^6.0.1",
+    "@turf/turf": "^5.1.6",
+    "aws-sdk": "^2.692.0",
+    "axios": "^0.19.2",
+    "mongodb": "^3.5.9"
+  },
+  "devDependencies": {
+    "serverless": "^1.72.0"
+  }
+}
